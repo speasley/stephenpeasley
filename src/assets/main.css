@@ -79,6 +79,10 @@ header a {
   stroke: var(--color-dev);
 }
 
+footer {
+  text-align: center;
+}
+
 /* themes */
 
 body.acting #main-logo .back,
@@ -129,6 +133,20 @@ body.ux #available svg { fill: var(--color-ux); }
     border-bottom: 3px solid var(--color-ux);
   }
 }
+
+/* brain */
+
+body.acting #noodle p.brainInfo { color: var(--color-acting); }
+body.dev #noodle p.brainInfo { color: var(--color-dev); }
+body.ux #noodle p.brainInfo { color: var(--color-ux); }
+
+body.acting #noodle p.brainInfo.status { border-right: 1px solid var(--color-acting); }
+body.dev #noodle p.brainInfo.status { border-right: 1px solid var(--color-dev); }
+body.ux #noodle p.brainInfo.status { border-right: 1px solid var(--color-ux); }
+
+body.acting #footer-brain { fill: var(--color-acting); }
+body.dev #footer-brain { fill: var(--color-dev); }
+body.ux #footer-brain { fill: var(--color-ux); }
 
 /* breakpoints */
 

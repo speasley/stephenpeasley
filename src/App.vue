@@ -4,6 +4,7 @@ import { RouterLink, RouterView } from "vue-router";
 import router from "@/router/index";
 import { useStore } from "@/stores/store";
 import Available from "@/components/Available.vue";
+import Brain from "@/components/Brain.vue";
 const currentYear = computed(() => new Date().getFullYear());
 const goHome = () => {
   router.push({ path: "/" });
@@ -50,7 +51,10 @@ onUnmounted(() => {
 
   <RouterView />
 
-  <footer>Made by me. &copy; Stephen Peasley, {{ currentYear }}</footer>
+  <footer>
+    <Brain />
+    <small>Made by me. &copy; Stephen Peasley, {{ currentYear }}</small>
+  </footer>
 </template>
 
 <style scoped>
