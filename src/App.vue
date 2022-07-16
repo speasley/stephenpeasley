@@ -1,8 +1,13 @@
 <script setup>
 import { computed, onMounted, onUnmounted } from "vue";
 import { RouterLink, RouterView } from "vue-router";
+import router from "@/router/index";
 import { useStore } from "@/stores/store";
+import Available from "@/components/Available.vue";
 const currentYear = computed(() => new Date().getFullYear());
+const goHome = () => {
+  router.push({ path: "/" });
+};
 onMounted(() => {
   document.body.classList.add("dev");
 });
@@ -19,6 +24,7 @@ onUnmounted(() => {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 347.74 347.74"
       xmlns:v="https://vecta.io/nano"
+      @click="goHome()"
     >
       <g class="back" opacity=".3" fill="none" stroke-width="20">
         <circle cx="91.87" cy="91.87" r="81.87" />
@@ -39,6 +45,7 @@ onUnmounted(() => {
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/about">About</RouterLink>
     </nav>
+    <Available text="For hire" />
   </header>
 
   <RouterView />
@@ -63,24 +70,5 @@ nav a {
 
 nav a:first-of-type {
   border: 0;
-}
-
-@media (min-width: 1024px) {
-  /*
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
-*/
 }
 </style>

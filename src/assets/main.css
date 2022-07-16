@@ -43,7 +43,7 @@ body {
 a {
   color: var(--color-dev);
   text-decoration: none;
-  transition: 0.4s;
+  transition: 0.25s;
 }
 
 a, h1, h2, h3, h4, h5, h6 {
@@ -57,14 +57,18 @@ a, h1, h2, h3, h4, h5, h6 {
 header {
   align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: stretch;
 }
 
 header a {
+  border-bottom: 3px solid transparent;
+  border-radius: 3px;
   font-size: 2.5rem;
 }
 
 #main-logo {
+  cursor: pointer;
   height: 65px;
   margin: 0 2rem 0 0;
   width: 65px;
@@ -83,6 +87,8 @@ body.acting #main-logo .fore {
 }
 body.acting { background-color: var(--color-acting); }
 body.acting a { color: var(--color-acting); }
+body.acting #available { color: var(--color-acting); }
+body.acting #available svg { fill: var(--color-acting); }
 
 body.dev #main-logo .back,
 body.dev #main-logo .fore {
@@ -90,6 +96,8 @@ body.dev #main-logo .fore {
 }
 body.dev { background-color: var(--color-dev); }
 body.dev a { color: var(--color-dev); }
+body.dev #available { color: var(--color-dev); }
+body.dev #available svg { fill: var(--color-dev); }
 
 body.ux #main-logo .back,
 body.ux #main-logo .fore {
@@ -97,6 +105,8 @@ body.ux #main-logo .fore {
 }
 body.ux { background-color: var(--color-ux); }
 body.ux a { color: var(--color-ux); }
+body.ux #available { color: var(--color-ux); }
+body.ux #available svg { fill: var(--color-ux); }
 
 @media (hover: hover) {
   a:hover {
@@ -105,6 +115,19 @@ body.ux a { color: var(--color-ux); }
   body.acting a:hover { color: var(--color-acting--fade); }
   body.dev a:hover { background-color: var(--color-dev--fade); }
   body.ux a:hover { background-color: var(--color-ux--fade); }
+
+  body.acting header a:not(.router-link-active):hover {
+    background-color: transparent;
+    border-bottom: 3px solid var(--color-acting);
+  }
+  body.dev header a:not(.router-link-active):hover {
+    background-color: transparent;
+    border-bottom: 3px solid var(--color-dev);
+  }
+  body.ux header a:not(.router-link-active):hover {
+    background-color: transparent;
+    border-bottom: 3px solid var(--color-ux);
+  }
 }
 
 /* breakpoints */
@@ -122,5 +145,8 @@ body.ux a { color: var(--color-ux); }
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
     */
+  }
+  header {
+    flex-direction: row;
   }
 }
