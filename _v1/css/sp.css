@@ -1,0 +1,65 @@
+body {
+  background-color: #fff;
+  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+  font-size: 1.8rem;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #333333;
+  font-family: "Patua One", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+.about {
+  border-top: 5px solid #01BAEF;
+  padding: 6rem 0 13rem 0;
+}
+.about p {
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8);
+}
+.work {
+  background: #f6f6f6;
+  padding: 3rem 0;
+}
+.project {
+  margin-bottom: 2.5rem;
+}
+.project h6 {
+  margin-bottom: 0;
+}
+.project p {
+  line-height: 1.4;
+  margin: 0.5rem 0;
+}
+.contact {
+  border-top: 1px solid #F0C808;
+  padding: 6rem 0 3rem 0;
+}
+.contact ul {
+  list-style: none;
+}
+.contact ul li {
+  display: inline;
+  margin: 1rem;
+}
+.contact ul li:first-child {
+  margin-left: 0;
+}
+.attribution { display: none; }
+small {
+  display: block;
+}
+@media (min-width: 1000px) {
+  .about {
+    background: transparent url('../images/stephen-canada-goose.png') no-repeat 75% 55px;
+    background-size: 579px 396px;
+  }
+  .attribution { display: block; }
+}
+@media (min-width: 1000px) and (-webkit-min-device-pixel-ratio : 1.5),
+ all and (-o-min-device-pixel-ratio: 3/2),
+ all and (min--moz-device-pixel-ratio: 1.5),
+ all and (min-device-pixel-ratio: 1.5) {
+ 
+ .about {
+   background: transparent url('../images/stephen-canada-goose-2x.png') no-repeat 75% 55px;
+   background-size: 579px 396px;
+ }
+}

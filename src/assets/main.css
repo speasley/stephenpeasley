@@ -1,0 +1,86 @@
+@import "./base.css";
+
+/* colours */
+/* https://coolors.co/f6ae2d-f26419-4056f4-36827f-5c2296
+hsla(39, 92%, 57%, 1) - yellow
+hsla(21, 89%, 52%, 1) - orange
+hsla(233, 89%, 60%, 1) - blue
+hsla(178, 41%, 36%, 1) - green
+hsla(270, 63%, 36%, 1) - purple
+*/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsla(233, 89%, 60%, 1);
+  font-size: 1.8rem;
+}
+
+#app {
+  background: white;
+  border-radius: 12px;
+  font-weight: normal;
+  margin: 0 1.25rem;
+  min-height: 96vh;
+  padding: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: hsla(233, 89%, 60%, 1);
+  transition: 0.4s;
+}
+
+#main-logo .back,
+#main-logo .fore {
+  stroke: hsla(233, 89%, 60%, 1);
+}
+
+/* themes */
+
+body.acting #main-logo .back,
+body.acting #main-logo .fore {
+  stroke: hsla(270, 63%, 36%, 1);
+}
+body.acting { background-color: hsla(270, 63%, 36%, 1); }
+body.acting a { color: hsla(270, 63%, 36%, 1); }
+
+body.dev #main-logo .back,
+body.dev #main-logo .fore {
+  stroke: hsla(233, 89%, 60%, 1);
+}
+body.dev { background-color: hsla(233, 89%, 60%, 1); }
+body.dev a { color: hsla(233, 89%, 60%, 1); }
+
+body.ux #main-logo .back,
+body.ux #main-logo .fore {
+  stroke: hsla(178, 41%, 36%, 1);
+}
+body.ux { background-color: hsla(178, 41%, 36%, 1); }
+body.ux a { color: hsla(178, 41%, 36%, 1); }
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(233, 89%, 60%, 0.2);
+  }
+  body.acting a:hover { background-color: hsla(270, 63%, 36%, 0.2); }
+  body.dev a:hover { background-color: hsla(233, 89%, 60%, 0.2); }
+  body.ux a:hover { background-color: hsla(178, 41%, 36%, 0.2); }
+}
+
+/* breakpoints */
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
