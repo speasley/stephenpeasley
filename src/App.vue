@@ -53,7 +53,7 @@ onUnmounted(() => {
 
   <footer>
     <Brain />
-    <small>Made by me. &copy; Stephen Peasley, {{ currentYear }}</small>
+    <small>&copy; Stephen Peasley, {{ currentYear }}</small>
   </footer>
 </template>
 
