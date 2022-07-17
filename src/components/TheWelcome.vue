@@ -3,7 +3,7 @@
 
 <template>
   <section>
-    <h1>Hi, I&rsquo;m Stephen.</h1>
+    <h1>Hi, I&rsquo;m Stephen. (home)</h1>
     <p>
       I am most passionate about crafting bespoke solutions to unique problems.
     </p>
