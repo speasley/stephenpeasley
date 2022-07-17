@@ -92,12 +92,14 @@ defineProps({
   position: absolute;
   right: 0;
   text-transform: uppercase;
+  transition: color 0.5s;
   top: 0;
 }
 
 #available svg {
   height: 35px;
   margin-top: -0.3rem;
+  transition: fill 0.5s, stroke 0.5s;
   width: 35px;
 }
 
