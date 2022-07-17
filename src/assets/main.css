@@ -57,6 +57,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: stretch;
+  margin-bottom: 1.5rem;
 }
 
 header a {
@@ -73,6 +74,10 @@ header a {
 }
 
 footer {
+  bottom: 2rem;
+  left: 0;
+  position: absolute;
+  right: 0;
   text-align: center;
 }
 
@@ -172,6 +177,7 @@ body.ux #footer-brain { fill: var(--color-ux); }
   }
   header {
     flex-direction: row;
+    margin-bottom: 3rem;
   }
 
   #main-logo {
