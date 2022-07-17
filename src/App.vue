@@ -43,8 +43,9 @@ onUnmounted(() => {
     </svg>
 
     <nav>
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/about">About</RouterLink>
+      <RouterLink to="/acting">Acting</RouterLink>
+      <RouterLink to="/dev">Dev</RouterLink>
+      <RouterLink to="/ux">UX</RouterLink>
     </nav>
     <Available text="For hire" />
   </header>
