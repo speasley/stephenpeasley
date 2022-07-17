@@ -5,15 +5,15 @@
 /* https://coolors.co/f6ae2d-f26419-4056f4-36827f-5c2296 */
 
 :root {
-/* green */
---color-about: hsla(178, 41%, 36%, 1);
---color-about--fade: hsla(178, 41%, 36%, 0.2);
 /* purple */
 --color-acting: hsla(270, 63%, 36%, 1);
 --color-acting--fade: hsla(270, 63%, 36%, 0.2);
+/* green */
+--color-dev: hsla(178, 41%, 36%, 1);
+--color-dev--fade: hsla(178, 41%, 36%, 0.2);
 /* blue */
---color-dev: hsla(233, 89%, 60%, 1);
---color-dev--fade: hsla(233, 89%, 60%, 0.2);
+--color-home: hsla(233, 89%, 60%, 1);
+--color-home--fade: hsla(233, 89%, 60%, 0.2);
 /* orange */
 --color-ux: hsla(21, 89%, 52%, 1);
 --color-ux--fade: hsla(21, 89%, 52%, 0.2);
@@ -27,7 +27,6 @@ html {
 }
 
 body {
-  background-color: var(--color-dev);
   font-size: 1.8rem;
 }
 
@@ -41,7 +40,6 @@ body {
 }
 
 a {
-  color: var(--color-dev);
   text-decoration: none;
   transition: 0.25s;
 }
@@ -74,11 +72,6 @@ header a {
   width: 65px;
 }
 
-#main-logo .back,
-#main-logo .fore {
-  stroke: var(--color-dev);
-}
-
 footer {
   text-align: center;
 }
@@ -103,6 +96,15 @@ body.dev a { color: var(--color-dev); }
 body.dev #available { color: var(--color-dev); }
 body.dev #available svg { fill: var(--color-dev); }
 
+body.home #main-logo .back,
+body.home #main-logo .fore {
+  stroke: var(--color-home);
+}
+body.home { background-color: var(--color-home); }
+body.home a { color: var(--color-home); }
+body.home #available { color: var(--color-home); }
+body.home #available svg { fill: var(--color-home); }
+
 body.ux #main-logo .back,
 body.ux #main-logo .fore {
   stroke: var(--color-ux);
@@ -114,7 +116,7 @@ body.ux #available svg { fill: var(--color-ux); }
 
 @media (hover: hover) {
   a:hover {
-    background-color: var(--color-dev--fade);
+    background-color: var(--color-home--fade);
   }
   body.acting a:hover { color: var(--color-acting--fade); }
   body.dev a:hover { background-color: var(--color-dev--fade); }
@@ -136,9 +138,9 @@ body.ux #available svg { fill: var(--color-ux); }
 
 /* brain */
 
-#noodle p.brainInfo { color: var(--color-dev); }
-#noodle p.brainInfo.status { border-right: 1px solid var(--color-dev); }
-#footer-brain { fill: var(--color-dev); }
+#noodle p.brainInfo { color: var(--color-home); }
+#noodle p.brainInfo.status { border-right: 1px solid var(--color-home); }
+#footer-brain { fill: var(--color-home); }
 
 body.acting #noodle p.brainInfo { color: var(--color-acting); }
 body.acting #noodle p.brainInfo.status { border-right: 1px solid var(--color-acting); }

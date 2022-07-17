@@ -1,5 +1,5 @@
 <script setup>
-import { computed, onMounted, onUnmounted } from "vue";
+import { computed } from "vue";
 import { RouterLink, RouterView } from "vue-router";
 import router from "@/router/index";
 import { useStore } from "@/stores/store";
@@ -9,12 +9,6 @@ const currentYear = computed(() => new Date().getFullYear());
 const goHome = () => {
   router.push({ path: "/" });
 };
-onMounted(() => {
-  document.body.classList.add("dev");
-});
-onUnmounted(() => {
-  document.body.classList.remove("dev");
-});
 </script>
 
 <template>

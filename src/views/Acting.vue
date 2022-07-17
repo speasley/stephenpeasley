@@ -1,10 +1,8 @@
 <script setup>
-import { onMounted, onUnmounted } from "vue";
+import { onMounted } from "vue";
 onMounted(() => {
+  document.body.className = "";
   document.body.classList.add("acting");
-});
-onUnmounted(() => {
-  document.body.classList.remove("acting");
 });
 </script>
 
