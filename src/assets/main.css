@@ -68,7 +68,7 @@ header a {
 #main-logo {
   cursor: pointer;
   height: 65px;
-  margin: 0 2rem 0 0;
+  margin: 0 0 2.5rem 0;
   width: 65px;
 }
 
@@ -172,5 +172,9 @@ body.ux #footer-brain { fill: var(--color-ux); }
   }
   header {
     flex-direction: row;
+  }
+
+  #main-logo {
+    margin: 0 2rem 0 0;
   }
 }
