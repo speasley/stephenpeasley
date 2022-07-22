@@ -34,8 +34,8 @@ body {
   background: white;
   border-radius: 12px;
   font-weight: normal;
-  margin: 0 1rem;
-  min-height: 96vh;
+  margin: 0 0.65rem;
+  min-height: 98vh;
   padding: 2rem;
 }
 
