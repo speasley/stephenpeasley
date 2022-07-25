@@ -95,6 +95,13 @@ body.acting { background-color: var(--color-acting); }
 body.acting a { color: var(--color-acting); }
 body.acting #available { color: var(--color-acting); }
 body.acting #available svg { fill: var(--color-acting); }
+body.acting a[href^="https"]::after {
+  content: url("./link.svg");
+  display: inline-block;
+  height: auto;
+  top: 0.25rem;
+  width: 1.75rem;
+}
 
 body.dev #main-logo .back,
 body.dev #main-logo .fore {
