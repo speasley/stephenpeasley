@@ -7,7 +7,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section>
+  <article>
     <h1>Hi, I&rsquo;m Stephen. (ux)</h1>
     <p>
       I am most passionate about crafting bespoke solutions to unique problems.
@@ -23,7 +23,7 @@ onMounted(() => {
         >Read my CV.</a
       >
     </p>
-  </section>
+  </article>
 </template>
 
 <style>

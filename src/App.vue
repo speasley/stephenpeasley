@@ -37,9 +37,9 @@ const goHome = () => {
     </svg>
 
     <nav>
-      <RouterLink to="/acting">Acting</RouterLink>
       <RouterLink to="/dev">Dev</RouterLink>
       <RouterLink to="/ux">UX</RouterLink>
+      <RouterLink to="/acting">Acting</RouterLink>
     </nav>
     <Available text="For hire" />
   </header>

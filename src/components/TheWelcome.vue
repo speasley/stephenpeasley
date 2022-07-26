@@ -1,11 +1,15 @@
-<script setup>
-</script>
-
 <template>
-  <section>
-    <h1>Hi, I&rsquo;m Stephen. (home)</h1>
+  <article>
+    <h1>Hi, I&rsquo;m Stephen.</h1>
+    <div class="img">
+      <img
+        src="/stephen.png"
+        alt="Stephen, smiling, in front of a grey brick wall"
+      />
+    </div>
     <p>
-      I am most passionate about crafting bespoke solutions to unique problems.
+      I&rsquo;m a freelance web developer, UX designer, and actor (classic
+      triple threat) living in Mohkinstsis/Calgary, Alberta.
     </p>
     <p>
       With over 20 years of industry experience, I can help bring your ideas to
@@ -18,6 +22,14 @@
         >Read my CV.</a
       >
     </p>
-  </section>
-
+  </article>
 </template>
+
+<style scoped>
+img {
+  border-radius: 50%;
+  float: right;
+  height: auto;
+  width: 30rem;
+}
+</style>
