@@ -1,12 +1,10 @@
 <template>
   <article>
+    <img
+      src="/stephen.png"
+      alt="Stephen, smiling, in front of a grey brick wall"
+    />
     <h1>Hi, I&rsquo;m Stephen.</h1>
-    <div class="img">
-      <img
-        src="/stephen.png"
-        alt="Stephen, smiling, in front of a grey brick wall"
-      />
-    </div>
     <p>
       I&rsquo;m a freelance web developer, UX designer, and actor (classic
       triple threat) living in Mohkinstsis/Calgary, Alberta.
