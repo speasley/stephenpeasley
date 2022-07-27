@@ -12,8 +12,8 @@ onMounted(() => {
     <SImage mode="ux" />
     <h1>Hi, I&rsquo;m Stephen. I do user experience.</h1>
     <p>
-      With my extensive background in software development, I naturally blend
-      and understanding of coding challenges into my
+      With my extensive background in software development, I naturally blend an
+      understanding of coding challenges into my
       <abbr title="user experience">UX work</abbr>. In other words, I understand
       what&rsquo;s involved in actually building what I&rsquo;m designing.
     </p>

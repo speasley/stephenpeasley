@@ -17,6 +17,6 @@ import SImage from "@/components/SImage.vue";
       thoughtful approach. I also value good humour, good crosswords, and good
       health.
     </p>
-    <p>I am to leave things better than how I found them.</p>
+    <p>I aim to leave things better than how I found them.</p>
   </article>
 </template>
