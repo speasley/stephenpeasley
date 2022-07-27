@@ -14,7 +14,7 @@ onMounted(() => {
     <p>
       With my extensive background in software development, I naturally blend an
       understanding of coding challenges into my
-      <abbr title="user experience">UX work</abbr>. In other words, I understand
+      <abbr title="user experience">UX</abbr> work. In other words, I understand
       what&rsquo;s involved in actually building what I&rsquo;m designing.
     </p>
     <p>
