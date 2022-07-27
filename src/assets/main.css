@@ -2,15 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500;0,800;1,500;1,800&display=swap');
 
 /* colours */
-/* https://coolors.co/f6ae2d-f26419-4056f4-36827f-5c2296 */
+/* https://coolors.co/f6ae2d-f26419-4056f4-32936f-5c2296 */
 
 :root {
 /* purple */
 --color-acting: hsla(270, 63%, 36%, 1);
 --color-acting--fade: hsla(270, 63%, 36%, 0.2);
 /* green */
---color-dev: hsla(178, 41%, 36%, 1);
---color-dev--fade: hsla(178, 41%, 36%, 0.2);
+--color-dev: hsla(158, 49%, 39%, 1);
+--color-dev--fade: hsla(158, 49%, 39%, 0.2);
 /* blue */
 --color-home: hsla(233, 89%, 60%, 1);
 --color-home--fade: hsla(233, 89%, 60%, 0.2);
@@ -18,8 +18,8 @@
 --color-ux: hsla(21, 89%, 52%, 1);
 --color-ux--fade: hsla(21, 89%, 52%, 0.2);
 /* yellow */
---color-yellow: hsla(39, 92%, 57%, 1);
---color-yellow--fade: hsla(39, 92%, 57%, 0.2);
+--color-extra: hsla(39, 92%, 57%, 1);
+--color-extra--fade: hsla(39, 92%, 57%, 0.2);
 }
 
 html {
@@ -57,6 +57,7 @@ a, h1, h2, h3, h4, h5, h6 {
 h1 { font-size: 3.25rem; }
 h2 { font-size: 2.75rem; }
 h3 { font-size: 2rem; }
+h1, h2, h3 { line-height: 1.3; }
 
 cite { font-weight: bold; }
 
@@ -89,6 +90,17 @@ header a {
   height: 65px;
   margin: 0 0 2.5rem 0;
   width: 65px;
+}
+
+img.stephen {
+  border-radius: 50%;
+  float: right;
+  height: 20rem;
+  width: 20rem;
+}
+
+article:last-of-type {
+  padding-bottom: 8rem;
 }
 
 footer {
@@ -149,11 +161,10 @@ body.home a:not(.button)[href^="https"]::after {
   top: 0.25rem;
   width: 1.75rem;
 }
-body.home img {
-  border: 5px solid var(--color-home--fade);
-  height: 30rem;
-  width: 30rem;
-}
+body.acting img.stephen { border: 5px solid var(--color-acting--fade); }
+body.dev img.stephen { border: 5px solid var(--color-dev--fade); }
+body.home img.stephen { border: 5px solid var(--color-home--fade); }
+body.ux img.stephen { border: 5px solid var(--color-ux--fade); }
 
 body.ux #main-logo .back,
 body.ux #main-logo .fore {
@@ -227,4 +238,14 @@ body.ux #footer-brain { fill: var(--color-ux); }
   #main-logo {
     margin: 0 2rem 0 0;
   }
+
+  article:last-of-type {
+    padding-bottom: 0;
+  }
+
+  img.stephen {
+    height: 30rem;
+    width: 30rem;
+  }
+
 }

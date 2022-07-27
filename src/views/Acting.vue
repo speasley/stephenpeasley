@@ -1,6 +1,7 @@
 <script setup>
 import { onMounted } from "vue";
 import SButton from "@/components/SButton.vue";
+import SImage from "@/components/SImage.vue";
 onMounted(() => {
   document.body.className = "";
   document.body.classList.add("acting");
@@ -9,6 +10,7 @@ onMounted(() => {
 
 <template>
   <article>
+    <SImage mode="acting" />
     <h1>Hi, I&rsquo;m Stephen. I sometimes pretend to act.</h1>
     <section>
       <h2>Theatre</h2>
@@ -40,21 +42,13 @@ onMounted(() => {
         Whether it&rsquo;s performing, teaching, coaching, producing, or
         crafting tech, I love the art form and the joy that it can bring us.
       </p>
-      <p>I am available for coaching and teaching improv.</p>
-    </section>
-    <section>
-      <h2>Voice</h2>
-      <p>I do some voice acting.</p>
+      <p>I can help with:</p>
+      <ul>
+        <li>Teaching improv principles</li>
+        <li>Coaching your troupe</li>
+        <li>Running workshops</li>
+        <li>QLab-based tech</li>
+      </ul>
     </section>
   </article>
 </template>
-
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style>

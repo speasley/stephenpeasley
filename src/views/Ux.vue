@@ -1,5 +1,6 @@
 <script setup>
 import { onMounted } from "vue";
+import SImage from "@/components/SImage.vue";
 onMounted(() => {
   document.body.className = "";
   document.body.classList.add("ux");
@@ -8,15 +9,23 @@ onMounted(() => {
 
 <template>
   <article>
-    <h1>Hi, I&rsquo;m Stephen. (ux)</h1>
+    <SImage mode="ux" />
+    <h1>Hi, I&rsquo;m Stephen. I do user experience.</h1>
     <p>
-      I am most passionate about crafting bespoke solutions to unique problems.
+      With my extensive background in software development, I naturally blend
+      and understanding of coding challenges into my
+      <abbr title="user experience">UX work</abbr>. In other words, I understand
+      what&rsquo;s involved in actually building what I&rsquo;m designing.
     </p>
     <p>
-      With over 20 years of industry experience, I can help bring your ideas to
-      life. I have a strong focus on the front end, favouring Vue.js, and am a
-      firm believer in user-centered design. I have done work for a wide range
-      of clients, from agency to safety to educational to entertainment.
+      While most of my career has been spent typing code, I have enjoyed putting
+      a more intentional focus on UX. I enjoy finding seemingly simple ways to
+      allow users to achieve their goals.
+    </p>
+    <p>
+      I can help improve interactions between your users and products, create
+      wireframes and user flows, and improve the overall usability of your
+      software.
     </p>
     <p>
       <a href="https://read.cv/speasley" title="https://read.cv/speasley"
@@ -25,13 +34,3 @@ onMounted(() => {
     </p>
   </article>
 </template>
-
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style>

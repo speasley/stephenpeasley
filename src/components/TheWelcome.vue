@@ -1,33 +1,22 @@
+<script setup>
+import SImage from "@/components/SImage.vue";
+</script>
+
 <template>
   <article>
-    <img
-      src="/stephen.png"
-      alt="Stephen, smiling, in front of a grey brick wall"
-    />
+    <SImage mode="home" />
     <h1>Hi, I&rsquo;m Stephen.</h1>
     <p>
-      I&rsquo;m a freelance web developer, UX designer, and actor (classic
-      triple threat) living in Mohkinstsis/Calgary, Alberta.
+      I&rsquo;m a freelance web developer, UX designer, and actor. A classic
+      triple threat. I live in Mohkinstsis/Calgary.
     </p>
     <p>
-      With over 20 years of industry experience, I can help bring your ideas to
-      life. I have a strong focus on the front end, favouring Vue.js, and am a
-      firm believer in user-centered design. I have done work for a wide range
-      of clients, from agency to safety to educational to entertainment.
+      I was born and raised in Saskatchewan, on the mean streets of Humboldt. I
+      shifted west in 2007. I love collaborating with other creative and
+      passionate people. I value early collaboration, brainstorming, and a
+      thoughtful approach. I also value good humour, good crosswords, and good
+      health.
     </p>
-    <p>
-      <a href="https://read.cv/speasley" title="https://read.cv/speasley"
-        >Read my CV.</a
-      >
-    </p>
+    <p>I am to leave things better than how I found them.</p>
   </article>
 </template>
-
-<style scoped>
-img {
-  border-radius: 50%;
-  float: right;
-  height: auto;
-  width: 30rem;
-}
-</style>
