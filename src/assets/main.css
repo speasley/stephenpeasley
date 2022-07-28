@@ -22,6 +22,10 @@
 --color-extra--fade: hsla(39, 92%, 57%, 0.2);
 }
 
+::selection {
+  color: white;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -113,6 +117,9 @@ footer {
 
 /* themes */
 
+body.acting ::selection {
+  background-color: var(--color-acting);
+}
 body.acting #main-logo .back,
 body.acting #main-logo .fore {
   stroke: var(--color-acting);
@@ -130,6 +137,9 @@ body.acting a:not(.button)[href^="https"]::after {
   width: 1.75rem;
 }
 
+body.dev ::selection {
+  background-color: var(--color-dev);
+}
 body.dev #main-logo .back,
 body.dev #main-logo .fore {
   stroke: var(--color-dev);
@@ -146,6 +156,9 @@ body.dev a:not(.button)[href^="https"]::after {
   width: 1.75rem;
 }
 
+body.home ::selection {
+  background-color: var(--color-home);
+}
 body.home #main-logo .back,
 body.home #main-logo .fore {
   stroke: var(--color-home);
@@ -166,6 +179,9 @@ body.dev img.stephen { border: 5px solid var(--color-dev--fade); }
 body.home img.stephen { border: 5px solid var(--color-home--fade); }
 body.ux img.stephen { border: 5px solid var(--color-ux--fade); }
 
+body.ux ::selection {
+  background-color: var(--color-ux);
+}
 body.ux #main-logo .back,
 body.ux #main-logo .fore {
   stroke: var(--color-ux);
