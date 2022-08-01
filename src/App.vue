@@ -18,7 +18,6 @@ const goHome = () => {
       class="logo"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 347.74 347.74"
-      xmlns:v="https://vecta.io/nano"
       @click="goHome()"
     >
       <g class="back" opacity=".3" fill="none" stroke-width="20">
