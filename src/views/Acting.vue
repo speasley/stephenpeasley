@@ -21,8 +21,7 @@ onMounted(() => {
       </p>
       <h3>Next up:</h3>
       <p>
-        See me play Dan in <cite>next to normal</cite> from
-        <time datetime="2022-09-08">September 8</time> through
+        See me play Dan in <cite>next to normal</cite> until
         <time datetime="2022-09-24">September 24</time> at
         <a href="https://www.newwesttheatre.com/">New West Theatre</a>.
       </p>
