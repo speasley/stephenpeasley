@@ -31,6 +31,7 @@ html {
 }
 
 body {
+  color: rgb(44, 62, 80);
   display: flex;
   font-size: 1.9rem;
   padding: 0.65rem;
@@ -47,12 +48,12 @@ body {
   padding: 2rem;
 }
 
-a {
+a, button {
   text-decoration: none;
   transition: 0.25s;
 }
 
-a, h1, h2, h3, h4, h5, h6 {
+a, button, h1, h2, h3, h4, h5, h6 {
   font-family: "Nunito", "Segoe UI", Roboto, Oxygen, "Helvetica Neue",
     sans-serif;
   font-weight: 800;
@@ -63,6 +64,18 @@ h2 { font-size: 2.75rem; }
 h3 { font-size: 2rem; }
 h1, h2, h3 { line-height: 1.3; }
 
+button {
+  background: transparent;
+  border: 2px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.7rem;
+  margin: 1rem 0;
+  padding: 0.5rem 0.75rem;
+  text-transform: uppercase;
+}
+
 cite { font-weight: bold; }
 
 section {
@@ -71,6 +84,10 @@ section {
 
 p {
   margin: 1.15rem 0;
+}
+
+nav a.router-link-exact-active {
+  color: rgb(44, 62, 80) !important;
 }
 
 /* header */
@@ -126,7 +143,8 @@ body.acting #main-logo .fore {
 }
 body.acting { background-color: var(--color-acting); }
 body.acting a { color: var(--color-acting); }
-body.acting a.button { border-color: var(--color-acting); }
+body.acting a.button, body.acting button { border-color: var(--color-acting); }
+body.acting button { color: var(--color-acting); }
 body.acting #available { color: var(--color-acting); }
 body.acting #available svg { fill: var(--color-acting); }
 body.acting a:not(.button)[href^="https"]::after {
@@ -146,6 +164,8 @@ body.dev #main-logo .fore {
 }
 body.dev { background-color: var(--color-dev); }
 body.dev a { color: var(--color-dev); }
+body.dev a.button, body.dev button { border-color: var(--color-dev); }
+body.dev button { color: var(--color-dev); }
 body.dev #available { color: var(--color-dev); }
 body.dev #available svg { fill: var(--color-dev); }
 body.dev a:not(.button)[href^="https"]::after {
@@ -165,6 +185,8 @@ body.home #main-logo .fore {
 }
 body.home { background-color: var(--color-home); }
 body.home a { color: var(--color-home); }
+body.home a.button, body.home button { border-color: var(--color-home); }
+body.home button { color: var(--color-home); }
 body.home #available { color: var(--color-home); }
 body.home #available svg { fill: var(--color-home); }
 body.home a:not(.button)[href^="https"]::after {
@@ -188,6 +210,8 @@ body.ux #main-logo .fore {
 }
 body.ux { background-color: var(--color-ux); }
 body.ux a { color: var(--color-ux); }
+body.ux a.button, body.ux button { border-color: var(--color-ux); }
+body.ux button { color: var(--color-ux); }
 body.ux #available { color: var(--color-ux); }
 body.ux #available svg { fill: var(--color-ux); }
 body.ux a:not(.button)[href^="https"]::after {
@@ -199,10 +223,10 @@ body.ux a:not(.button)[href^="https"]::after {
 }
 
 @media (hover: hover) {
-  body.acting a:hover { background-color: var(--color-acting--fade); }
-  body.dev a:hover { background-color: var(--color-dev--fade); }
-  body.home a:hover { background-color: var(--color-home--fade); }
-  body.ux a:hover { background-color: var(--color-ux--fade); }
+  body.acting a:hover, body.acting button:hover { background-color: var(--color-acting--fade); }
+  body.dev a:hover, body.dev button:hover { background-color: var(--color-dev--fade); }
+  body.home a:hover, body.home button:hover { background-color: var(--color-home--fade); }
+  body.ux a:hover, body.ux button:hover { background-color: var(--color-ux--fade); }
 
   body.acting header a:not(.router-link-active):hover {
     background-color: transparent;
