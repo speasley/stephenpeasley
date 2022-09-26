@@ -17,17 +17,18 @@ onMounted(() => {
       <p>
         You know me from the 1987 production of
         <cite>Goin&rsquo; Buggy</cite> at Humboldt Public School. It was a
-        massive success and established my footing as a legitimate actor.
+        massive success and established my footing as a legitimate actor. More
+        recently, I played Dan in <cite>next to normal</cite> at
+        <a href="https://www.newwesttheatre.com/">New West Theatre</a>.
       </p>
       <h3>Next up:</h3>
       <p>
-        See me play Dan in <cite>next to normal</cite> until
-        <time datetime="2022-09-24">September 24</time> at
-        <a href="https://www.newwesttheatre.com/">New West Theatre</a>.
+        See me play Jim in <cite>The Office: A Pop Rock Parody</cite> at
+        Jubilations Dinner Theatre in Calgary.
       </p>
       <SButton
         ext
-        link="https://enmaxcentre.evenue.net/cgi-bin/ncommerce3/SEGetEventList?linkID=lethbridge-multi&grandParent=NWN&timeDateFrom=2022-9-1-00.00.00&timeDateTo=2023-8-31-23.59.59&tgenGroup=NWN"
+        link="https://jubilations.ca/the-office-a-pop-rock-parody/"
         text="Buy tickets"
       />
     </section>
