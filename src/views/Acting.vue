@@ -24,8 +24,10 @@ onMounted(() => {
       <h3>Next up:</h3>
       <p>
         See me play Jim in <cite>The Office: A Pop Rock Parody</cite> at
-        Jubilations Dinner Theatre in Calgary from
-        <time datetime="2022-10-22">Oct 22</time>&ndash;<time
+        <a href="https://jubilations.ca/calgary-shows/"
+          >Jubilations Dinner Theatre</a
+        >
+        in Calgary from <time datetime="2022-10-22">Oct 22</time>&ndash;<time
           datetime="2023-01-14"
           >Jan 14</time
         >.
