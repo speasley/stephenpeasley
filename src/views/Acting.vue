@@ -15,7 +15,7 @@ onMounted(() => {
     <section>
       <h2>Theatre</h2>
       <p>
-        You know me as The Spider from the 1987 production of
+        You know me as Spider Narrator from the 1987 production of
         <cite>Goin&rsquo; Buggy</cite> at Humboldt Public School. It was a
         massive success and established my footing as a legitimate actor. More
         recently, I played Dan in <cite>next to normal</cite> at
