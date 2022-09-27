@@ -113,11 +113,13 @@ header a {
   width: 65px;
 }
 
+figure {
+  text-align: center;
+}
+
 img.stephen {
   border-radius: 50%;
-  float: right;
   height: 20rem;
-  margin-left: 0.5rem;
   width: 20rem;
 }
 
@@ -282,6 +284,12 @@ body.ux #footer-brain { fill: var(--color-ux); }
 
   article:last-of-type {
     padding-bottom: 0;
+  }
+
+  figure {
+    float: right;
+    margin-left: 0.5rem;
+    text-align: unset;
   }
 
   img.stephen {
