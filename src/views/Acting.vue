@@ -19,24 +19,12 @@ onMounted(() => {
         <cite>Goin&rsquo; Buggy</cite> at Humboldt Public School. Its massive
         success established my footing as a legitimate actor. More recently, I
         played Dan in <cite>Next to Normal</cite> at
-        <a href="https://www.newwesttheatre.com/">New West Theatre</a>.
-      </p>
-      <h3>Next up:</h3>
-      <p>
-        See me play Jim in <cite>The Office: A Pop Rock Parody</cite> at
+        <a href="https://www.newwesttheatre.com/">New West Theatre</a> and Jim
+        in <cite>The Office: A Pop Rock Parody</cite> at
         <a href="https://jubilations.ca/calgary-shows/"
           >Jubilations Dinner Theatre</a
-        >
-        in Calgary from <time datetime="2022-10-22">Oct 22</time>&ndash;<time
-          datetime="2023-01-14"
-          >Jan 14</time
         >.
       </p>
-      <SButton
-        ext
-        link="https://jubilations.ca/the-office-a-pop-rock-parody/"
-        text="Buy tickets"
-      />
     </section>
     <section>
       <h2>Improv</h2>
