@@ -43,6 +43,11 @@ onMounted(() => {
         <li>Running workshops</li>
         <li>QLab-based tech</li>
       </ul>
+      <p>
+        I am the founder of
+        <a href="https://www.discountimprov.com/">AAA Discount Improv</a>. We
+        are just getting warmed up and have some fun things in the works.
+      </p>
     </section>
   </article>
 </template>
