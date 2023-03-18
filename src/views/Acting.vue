@@ -1,6 +1,5 @@
 <script setup>
 import { onMounted } from "vue";
-import SButton from "@/components/SButton.vue";
 import SImage from "@/components/SImage.vue";
 onMounted(() => {
   document.body.className = "";
