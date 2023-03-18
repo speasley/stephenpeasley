@@ -1,5 +1,10 @@
 <template>
-  <aside id="available">
+  <aside
+    @mouseover="state.displayText = 'copy email'"
+    @mouseout="state.displayText = 'for hire'"
+    @click.stop.prevent="copyEmail"
+    id="available"
+  >
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -69,18 +74,25 @@
         d="M350 37.766c34.566 0 63.113 27.098 64.871 61.605l108.16 141.22h60.863v281.65h-467.79v-281.65h60.859l108.16-141.22c1.773-34.508 30.305-61.605 64.887-61.605zm-55.625 325.9 35.395 36.789 89.34-87.719 24.75 25.168-102.07 100.21-12.719 12.496-12.367-12.852-47.75-49.633 25.426-24.461zm184.19-123.08-76.184-99.457c-12.125 16.508-31.75 26.535-52.383 26.535-20.695 0-40.254-10.016-52.398-26.535l-76.184 99.457zm69.934 35.387h-397.01v210.87h397.01zm-198.5-202.82c-16.324 0-29.578 13.242-29.578 29.57 0 16.375 13.207 29.547 29.578 29.547 16.344 0 29.566-13.184 29.566-29.547 0-16.332-13.25-29.57-29.566-29.57z"
       />
     </svg>
-    &nbsp;{{ text }}
+    &nbsp;{{ state.displayText }}
   </aside>
 </template>
 
 <script setup>
-defineProps({
-  text: String,
-});
+import { reactive } from "vue";
+const state = reactive({
+  displayText: "for hire",
+})
+function copyEmail() {
+  navigator.clipboard.writeText("s@stephenpeasley.com").then(() => {
+    state.displayText = "email copied";
+  });
+}
 </script>
 
 <style scoped>
 #available {
+  cursor: pointer;
   display: flex;
   flex-flow: column;
   font-family: "Nunito", "Segoe UI", Roboto, Oxygen, "Helvetica Neue",
