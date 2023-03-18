@@ -29,8 +29,9 @@ onMounted(() => {
     <section>
       <h2>Improv</h2>
       <p>
-        I have been involved in improv for several years. Musical improv is
-        magical and I think it is the most fun a person can have.
+        I have been involved in improv for several years. I produce an episodic
+        improvised series called
+        <a href="https://www.discountimprov.com/next-time/about">Next Time</a>.
       </p>
       <p>
         Whether it&rsquo;s performing, teaching, coaching, producing, or
