@@ -25,8 +25,9 @@ onMounted(() => {
     <ul>
       <li>ATB</li>
       <li>Corbis</li>
-      <li>Doors Open YYC</li>
       <li>Enbridge</li>
+      <li>Greenlight Rights</li>
+      <li>iStock</li>
       <li>Saskatchewan Education</li>
       <li>Scholastic</li>
       <li>Smallman Records</li>
