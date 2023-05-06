@@ -7,10 +7,22 @@
       src="/stephen-acting.png"
     />
     <img
-      v-else
+      v-if="mode == 'dev'"
       alt="Stephen with a grisled beard, smiling in front of a grey brick wall"
       :class="['stephen', mode]"
       src="/stephen.png"
+    />
+    <img
+      v-if="mode == 'home'"
+      alt="Stephen with a grisled beard, smiling, looking into the distance with a small, white Maltipoo"
+      :class="['stephen', mode]"
+      src="/stephen-lily.png"
+    />
+    <img
+      v-if="mode == 'ux'"
+      alt="Stephen in a buttoned plaid shirt, standing in front of a street sign that says Peasley Road"
+      :class="['stephen', mode]"
+      src="/stephen-ux.png"
     />
   </figure>
 </template>
