@@ -1,5 +1,5 @@
 <template>
-  <aside
+  <div
     @mouseover="state.displayText = 'copy email'"
     @mouseout="state.displayText = 'for hire'"
     @click.stop.prevent="copyEmail"
@@ -75,7 +75,7 @@
       />
     </svg>
     &nbsp;{{ state.displayText }}
-  </aside>
+  </div>
 </template>
 
 <script setup>
@@ -101,11 +101,8 @@ function copyEmail() {
   font-size: 1.5rem;
   line-height: 1;
   place-items: center;
-  position: absolute;
-  right: 0;
   text-transform: uppercase;
   transition: color 0.5s;
-  top: 0;
 }
 
 #available svg {

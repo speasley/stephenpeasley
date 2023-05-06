@@ -106,6 +106,16 @@ header a {
   font-size: 2.5rem;
 }
 
+header aside {
+  align-items: center;
+  column-gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 #main-logo {
   cursor: pointer;
   height: 65px;
@@ -150,6 +160,7 @@ body.acting a.button, body.acting button { border-color: var(--color-acting); }
 body.acting button { color: var(--color-acting); }
 body.acting #available { color: var(--color-acting); }
 body.acting #available svg { fill: var(--color-acting); }
+body.acting #ko-fi { background-color: var(--color-acting); }
 body.acting a:not(.button)[href^="https"]::after {
   content: url("./link.svg");
   display: inline-block;
@@ -171,6 +182,7 @@ body.dev a.button, body.dev button { border-color: var(--color-dev); }
 body.dev button { color: var(--color-dev); }
 body.dev #available { color: var(--color-dev); }
 body.dev #available svg { fill: var(--color-dev); }
+body.dev #ko-fi { background-color: var(--color-dev); }
 body.dev a:not(.button)[href^="https"]::after {
   content: url("./link.svg");
   display: inline-block;
@@ -192,6 +204,7 @@ body.home a.button, body.home button { border-color: var(--color-home); }
 body.home button { color: var(--color-home); }
 body.home #available { color: var(--color-home); }
 body.home #available svg { fill: var(--color-home); }
+body.home #ko-fi { background-color: var(--color-home); }
 body.home a:not(.button)[href^="https"]::after {
   content: url("./link.svg");
   display: inline-block;
@@ -217,36 +230,13 @@ body.ux a.button, body.ux button { border-color: var(--color-ux); }
 body.ux button { color: var(--color-ux); }
 body.ux #available { color: var(--color-ux); }
 body.ux #available svg { fill: var(--color-ux); }
+body.ux #ko-fi { background-color: var(--color-ux); }
 body.ux a:not(.button)[href^="https"]::after {
   content: url("./link.svg");
   display: inline-block;
   height: auto;
   top: 0.25rem;
   width: 1.75rem;
-}
-
-@media (hover: hover) {
-  body.acting a:hover, body.acting button:hover { background-color: var(--color-acting--fade); }
-  body.dev a:hover, body.dev button:hover { background-color: var(--color-dev--fade); }
-  body.home a:hover, body.home button:hover { background-color: var(--color-home--fade); }
-  body.ux a:hover, body.ux button:hover { background-color: var(--color-ux--fade); }
-
-  body.acting header a:not(.router-link-active):hover {
-    background-color: transparent;
-    border-bottom: 3px solid var(--color-acting);
-  }
-  body.dev header a:not(.router-link-active):hover {
-    background-color: transparent;
-    border-bottom: 3px solid var(--color-dev);
-  }
-  body.home header a:not(.router-link-active):hover {
-    background-color: transparent;
-    border-bottom: 3px solid var(--color-home);
-  }
-  body.ux header a:not(.router-link-active):hover {
-    background-color: transparent;
-    border-bottom: 3px solid var(--color-ux);
-  }
 }
 
 /* brain */
@@ -276,6 +266,10 @@ body.ux #footer-brain { fill: var(--color-ux); }
   header {
     flex-direction: row;
     margin-bottom: 3rem;
+  }
+
+  header aside {
+    flex-direction: row;
   }
 
   #main-logo {

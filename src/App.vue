@@ -2,8 +2,8 @@
 import { computed } from "vue";
 import { RouterLink, RouterView } from "vue-router";
 import router from "@/router/index";
-import { useStore } from "@/stores/store";
 import Available from "@/components/Available.vue";
+import Coffee from "@/components/Coffee.vue"
 import Brain from "@/components/Brain.vue";
 const currentYear = computed(() => new Date().getFullYear());
 const goHome = () => {
@@ -40,7 +40,10 @@ const goHome = () => {
       <RouterLink to="/ux">UX</RouterLink>
       <RouterLink to="/acting">Acting</RouterLink>
     </nav>
-    <Available text="For hire" />
+    <aside>
+      <Available text="For hire" />
+      <Coffee />
+    </aside>
   </header>
 
   <RouterView />
