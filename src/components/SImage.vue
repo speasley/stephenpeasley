@@ -38,12 +38,12 @@ img.stephen {
   border-radius: 50% 60% 60% 30% / 40% 30% 80% 60%;
 }
 img.stephen.acting {
-  border-radius: 40% 70% 60% 30% / 50% 40% 80% 60%;
+  border-radius: 59% 41% 47% 53% / 47% 30% 70% 53%;
 }
 img.stephen.dev {
-  border-radius: 60% 70% 50% 30% / 60% 30% 70% 60%;
+  border-radius: 51% 49% 56% 44% / 29% 57% 43% 71%;
 }
 img.stephen.ux {
-  border-radius: 40% 50% 70% 40% / 50% 50% 30% 40%;
+  border-radius: 78% 22% 48% 52% / 36% 35% 65% 64%;
 }
 </style>
