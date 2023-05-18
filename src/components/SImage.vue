@@ -33,4 +33,17 @@ defineProps({
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+img.stephen {
+  border-radius: 50% 60% 60% 30% / 40% 30% 80% 60%;
+}
+img.stephen.acting {
+  border-radius: 40% 70% 60% 30% / 50% 40% 80% 60%;
+}
+img.stephen.dev {
+  border-radius: 60% 70% 50% 30% / 60% 30% 70% 60%;
+}
+img.stephen.ux {
+  border-radius: 40% 50% 70% 40% / 50% 50% 30% 40%;
+}
+</style>
