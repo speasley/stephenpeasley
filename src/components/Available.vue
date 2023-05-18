@@ -85,7 +85,7 @@ const state = reactive({
 })
 function copyEmail() {
   navigator.clipboard.writeText("s@stephenpeasley.com").then(() => {
-    state.displayText = "email copied";
+    state.displayText = "copied";
   });
 }
 </script>
@@ -102,14 +102,21 @@ function copyEmail() {
   line-height: 1;
   place-items: center;
   text-transform: uppercase;
-  transition: color 0.5s;
+  transition: all 0.5s;
+  width: 14rem;
 }
 
 #available svg {
   height: 35px;
   margin-top: -0.3rem;
+  transform: rotate(0deg) translateX(-1px);
   transition: fill 0.5s, stroke 0.5s;
   width: 35px;
+}
+
+#available:hover svg {
+  transform: rotate(-3deg) translateX(0px);
+  transition: all 0.25s;
 }
 
 @media (min-width: 1024px) {
