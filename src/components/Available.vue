@@ -91,6 +91,15 @@ function copyEmail() {
 </script>
 
 <style scoped>
+@keyframes swing {
+  0% {
+    transform: rotate(-3deg) translateX(1px);
+  }
+  100% {
+    transform: rotate(3deg) translateX(-1px);
+  }
+}
+
 #available {
   cursor: pointer;
   display: flex;
@@ -109,14 +118,11 @@ function copyEmail() {
 #available svg {
   height: 35px;
   margin-top: -0.3rem;
-  transform: rotate(0deg) translateX(-1px);
-  transition: fill 0.5s, stroke 0.5s;
   width: 35px;
 }
 
 #available:hover svg {
-  transform: rotate(-3deg) translateX(0px);
-  transition: all 0.25s;
+  animation: swing 1s alternate infinite ease-in-out;
 }
 
 @media (min-width: 1024px) {
