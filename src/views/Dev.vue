@@ -14,7 +14,7 @@ onMounted(() => {
     <p>
       With over 20 years of industry experience, I can help bring your ideas to
       life. I have a strong focus on the front end, favouring Vue.js on a
-      <abbr title="JavaScript, APIs, markup">JAMstack</abbr>, and am a firm
+      <abbr title="JavaScript, APIs, markup">Jamstack</abbr>, and am a firm
       believer in user-centered design.
     </p>
     <p>
