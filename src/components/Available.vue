@@ -4,6 +4,7 @@
     @mouseout="state.displayText = 'for hire'"
     @click.stop.prevent="copyEmail"
     id="available"
+    role="button"
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"
