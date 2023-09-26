@@ -15,6 +15,7 @@ const goHome = () => {
   <header>
     <svg
       id="main-logo"
+      role="button"
       class="logo"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 347.74 347.74"
