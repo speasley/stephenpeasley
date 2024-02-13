@@ -25,10 +25,10 @@ onMounted(() => {
         >.
       </p>
       <p>
-        See me play Blackbeard in <cite>Teach, Stede, Jamie</cite> in the
+        See me play Blackbeard in <cite>Teach Stede, Jamie</cite> in the
         <a href="https://pumphousetheatre.ca/one-act-play-festival-2/"
           >2024 Calgary One-Act Play Festival</a
-        >.
+        > on Saturday, March 24.
       </p>
     </section>
     <section>
