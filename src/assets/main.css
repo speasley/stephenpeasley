@@ -109,8 +109,8 @@ header a {
 header aside {
   align-items: center;
   column-gap: 2rem;
-  display: flex;
-  flex-direction: column;
+  display: none;
+  flex-direction: row;
   position: absolute;
   right: 0;
   top: 0;
@@ -119,7 +119,7 @@ header aside {
 #main-logo {
   cursor: pointer;
   height: 65px;
-  margin: 0 0 2.5rem 0;
+  margin: 0 0 1.5rem 0;
   width: 65px;
 }
 
@@ -269,7 +269,7 @@ body.ux #footer-brain { fill: var(--color-ux); }
   }
 
   header aside {
-    flex-direction: row;
+    display: flex;
   }
 
   #main-logo {
