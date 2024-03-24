@@ -18,17 +18,14 @@ onMounted(() => {
         <cite>Goin&rsquo; Buggy</cite> at Humboldt Public School. Its massive
         success established my footing as a legitimate actor. More recently, I
         played Dan in <cite>Next to Normal</cite> at
-        <a href="https://www.newwesttheatre.com/">New West Theatre</a> and Jim
+        <a href="https://www.newwesttheatre.com/">New West Theatre</a>, Jim
         in <cite>The Office: A Pop Rock Parody</cite> at
         <a href="https://jubilations.ca/calgary-shows/"
           >Jubilations Dinner Theatre</a
-        >.
-      </p>
-      <p>
-        See me play Blackbeard in <cite>Teach Stede, Jamie</cite> in the
+        >, and Blackbeard in <cite>Teach Stede, Jamie</cite> in the
         <a href="https://pumphousetheatre.ca/one-act-play-festival-2/"
           >2024 Calgary One-Act Play Festival</a
-        > on Saturday, March 23.
+        >.
       </p>
     </section>
     <section>
