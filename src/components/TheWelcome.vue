@@ -7,8 +7,18 @@ import SImage from "@/components/SImage.vue";
     <SImage mode="home" />
     <h1>Hi, I&rsquo;m Stephen.</h1>
     <p>
-      I&rsquo;m a freelance web developer, UX designer, and actor. A classic
-      triple threat. I live in Mohkinstsis/Calgary.
+      I&rsquo;m a freelance web developer, designer, and actor. A classic triple
+      threat. I live in Mohkinstsis/Calgary.
+    </p>
+    <p>
+      I am currently pursuing a
+      <a
+        href="https://www.royalroads.ca/programs/master-arts-learning-and-technology"
+        >Master of Arts in Learning and Technology degree</a
+      >
+      from <a href="https://www.royalroads.ca/">Royal Roads University.</a> If
+      you would like to follow my academic writings, you can find them on my
+      <a href="https://malat-webspace.royalroads.ca/rru297/">blog</a>.
     </p>
     <p>
       I was born and raised in Saskatchewan, on the mean streets of Humboldt. I
