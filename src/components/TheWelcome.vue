@@ -7,8 +7,8 @@ import SImage from "@/components/SImage.vue";
     <SImage mode="home" />
     <h1>Hi, I&rsquo;m Stephen.</h1>
     <p>
-      I&rsquo;m a freelance web developer, designer, and actor. A classic triple
-      threat. I live in Mohkinstsis/Calgary.
+      I&rsquo;m a web developer, designer, and actor. A classic triple threat. I
+      live in Mohkinstsis/Calgary.
     </p>
     <p>
       I was born and raised in Saskatchewan, on the mean streets of Humboldt. I
