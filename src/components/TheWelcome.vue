@@ -22,9 +22,10 @@ import SImage from "@/components/SImage.vue";
       I am currently pursuing a
       <a
         href="https://www.royalroads.ca/programs/master-arts-learning-and-technology"
-        >Master of Arts in Learning and Technology degree</a
+        >Master of Arts in Learning and Technology</a
       >
-      from <a href="https://www.royalroads.ca/">Royal Roads University.</a> If
+      degree from
+      <a href="https://www.royalroads.ca/">Royal Roads University.</a> If you
       you would like to follow my academic writings, you can find them on my
       <a href="https://malat-webspace.royalroads.ca/rru297/">blog</a>.
     </p>
