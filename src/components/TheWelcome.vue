@@ -7,9 +7,11 @@ const latestArticle = ref({ title: "", link: "" });
 onMounted(async () => {
   try {
     const response = await fetch(
-      "https://malat-webspace.royalroads.ca/rru297/feed/"
+      "https://api.allorigins.win/get?url=" +
+        encodeURIComponent("https://malat-webspace.royalroads.ca/rru297/feed/")
     );
-    const xmlText = await response.text();
+    const data = await response.json();
+    const xmlText = data.contents;
 
     const parser = new DOMParser();
     const xmlDoc = parser.parseFromString(xmlText, "application/xml");
@@ -44,10 +46,10 @@ onMounted(async () => {
     </p>
     <p>I aim to leave things better than how I found them.</p>
     <p>
-      I am currently pursuing a
+      I am currently pursuing an
       <a
         href="https://www.royalroads.ca/programs/master-arts-learning-and-technology"
-        >Master of Arts in Learning and Technology</a
+        >MA in Learning and Technology</a
       >
       degree from
       <a href="https://www.royalroads.ca/">Royal Roads University</a>. If you
