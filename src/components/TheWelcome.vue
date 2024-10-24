@@ -24,7 +24,7 @@ import SImage from "@/components/SImage.vue";
         href="https://www.royalroads.ca/programs/master-arts-learning-and-technology"
         >MA in Learning and Technology</a
       >
-      degree from
+      from
       <a href="https://www.royalroads.ca/">Royal Roads University</a>. If you
       would like to follow my academic writings, you can find them on my
       <a href="https://malat-webspace.royalroads.ca/rru297/">blog</a>.
