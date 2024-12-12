@@ -18,7 +18,7 @@ onMounted(() => {
         <cite>Goin&rsquo; Buggy</cite> at Humboldt Public School. Its massive
         success established my footing as a legitimate actor. More recently, I
         played Dan in <cite>Next to Normal</cite> at
-        <a href="https://www.newwesttheatre.com/">New West Theatre</a>, Jim in
+        <a href="https://www.newwesttheatre.com/">New West Theatre</a>, Jim
         in <cite>The Office: A Pop Rock Parody</cite> at
         <a href="https://jubilations.ca/calgary-shows/"
           >Jubilations Dinner Theatre</a
