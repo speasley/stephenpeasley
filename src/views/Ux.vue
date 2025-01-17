@@ -27,10 +27,5 @@ onMounted(() => {
       wireframes and user flows, and improve the overall usability of your
       software.
     </p>
-    <p>
-      <a href="https://read.cv/speasley" title="https://read.cv/speasley"
-        >Read my CV.</a
-      >
-    </p>
   </article>
 </template>

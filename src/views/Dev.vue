@@ -41,11 +41,6 @@ onMounted(() => {
       or help with your Squarespace site, let&rsquo;s chat about how I can help
       with your project.
     </p>
-    <p>
-      <a href="https://read.cv/speasley" title="https://read.cv/speasley"
-        >Read my CV.</a
-      >
-    </p>
   </article>
 </template>
 
