@@ -1,14 +1,7 @@
 <script setup>
 import { computed } from "vue";
-import { RouterLink, RouterView } from "vue-router";
-import router from "@/router/index";
-import Available from "@/components/Available.vue";
-import Coffee from "@/components/Coffee.vue"
 import Brain from "@/components/Brain.vue";
 const currentYear = computed(() => new Date().getFullYear());
-const goHome = () => {
-  router.push({ path: "/" });
-};
 </script>
 
 <template>
@@ -19,7 +12,6 @@ const goHome = () => {
       class="logo"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 347.74 347.74"
-      @click="goHome()"
     >
       <g class="back" opacity=".3" fill="none" stroke-width="20">
         <circle cx="91.87" cy="91.87" r="81.87" />
@@ -36,15 +28,6 @@ const goHome = () => {
       />
     </svg>
 
-    <nav>
-      <RouterLink to="/dev">Dev</RouterLink>
-      <RouterLink to="/ux">UX</RouterLink>
-      <RouterLink to="/acting">Acting</RouterLink>
-    </nav>
-    <aside>
-      <Available text="For hire" />
-      <Coffee />
-    </aside>
   </header>
 
   <RouterView />
@@ -54,23 +37,3 @@ const goHome = () => {
     <small>&copy; Stephen Peasley, {{ currentYear }}</small>
   </footer>
 </template>
-
-<style scoped>
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-</style>
